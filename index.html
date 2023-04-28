@@ -12,8 +12,6 @@
     <script defer src="js/script.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- swiper 사이트 -> get started -> use swiper from CDN -->
-
   </head>
   <body>
     <header class="header">
@@ -23,7 +21,8 @@
           <li><a href="#">어린이박물관</a></li>
           <li><a href="#">정보공개</a></li>
           <li>LANGUAGE</li>
-        </ul> 
+        </ul>
+        <!-- 위치 오른쪽, 가로정렬, 여백 , 배경색 #eee-->
       </div>
       <!-- h_top end -->
       <nav class="nav">
@@ -123,7 +122,8 @@
         <div class="m_nav_bg">
           <div class="m_nav">
             <div class="m_close">X</div>
-            <ul class="m_top"> 
+            <ul class="m_top">
+              <!-- width: 310px -->
               <li><a href="#">국립광주박물관</a></li>
               <li><a href="#">LANGUAGE</a></li>
             </ul>
@@ -174,12 +174,12 @@
           </div>
           <div class="swiper-slide">
             <a href="#">
-              <img src="img/slide2.jpg" alt="" />
+              <img src="img/slide2.png" alt="" />
             </a>
           </div>
           <div class="swiper-slide">
             <a href="#">
-              <img src="img/slide3.png" alt="" />
+              <img src="img/getImage.png" alt="" />
             </a>
           </div>
         </div>
@@ -187,13 +187,17 @@
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
+        <!-- swiper 관련 css,js 들은 기본 스타일이 있기 때문에 (swiper js,css파일에 저장된 스타일) 수정하고 싶다면 요소를 정확히 지정해서 수정해야 함. -->
       </div>
       <!-- swiper-container end -->
     </div>
     <!-- main end -->
-    <section class="contents"> 
-      <div class="con1"> 
-        <div class="con1_box"> 
+    <section class="contents">
+      <!-- background #eef0f4 -->
+      <div class="con1">
+        <!-- max-width:1240px -->
+        <div class="con1_box">
+          <!-- width:25% ,background, height: 75px -->
           <a href="#">
             <img src="img/icon1-1.png" alt="" />
             <span>통합검색/예약</span>
@@ -239,9 +243,40 @@
                 </a>
               </div>
               <!-- slide2 -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/banner13.png" alt="" />
+                </a>
+              </div>
+              <!-- slide3 -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/banner4.png" alt="" />
+                </a>
+              </div>
+              <!-- slide4 -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/banner5.jpg" alt="" />
+                </a>
+              </div>
+              <!-- slide5 -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/banner6.png" alt="" />
+                </a>
+              </div>
+              <!-- slide6 -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/banner7.jpg" alt="" />
+                </a>
+              </div>
+              <!-- slide7 -->
             </div>
             <!-- swiper-wrapper end -->
-            <div class="box_btns"> 
+            <div class="box_btns">
+              <!-- %,px,padding 배경색 -->
               <p>팝업존</p>
               <ul class="ctrls">
                 <li class="swiper-pagination"></li>
@@ -266,7 +301,8 @@
         <div class="con2_box">
           <div class="time">
             <p>10:00~18:00</p>
-            <p>1월 1일, 설날, 추석, 4월·11월 첫번째 월요일 휴관</p>
+            <p>입장마감: 17:30<br>
+              1월 1일, 설날, 추석, 4월·11월 첫번째 월요일 휴관</p>
           </div>
           <!-- time end -->
           <div class="time_list">
@@ -321,10 +357,12 @@
             <p>국립광주박물관 브랜드</p>
           </div>
           <!-- box4_title end -->
-          <div class="line"></div> 
+          <div class="line"></div>
+          <!-- 48px * 2px -->
           <!-- line end -->
           <div class="box4_btns">
-            <a href="#">뉴스레터</a> 
+            <a href="#">뉴스레터</a>
+            <!-- 90px * 40px -->
             <a href="#">학술지</a>
             <a href="#">조사연구</a>
             <a href="#">아카이브</a>
@@ -334,56 +372,63 @@
         <!-- con2_box 4 -->
         <div class="con2_box">
           <ul class="tab_title">
-            <li>새소식</li>
+            <li class="active">새소식</li>
             <li>교육프로그램 공지</li>
           </ul>
           <!-- tab_title end -->
-          <a href="#"><img src="img/con2_img_05.png" alt="" /></a>
           <div class="tab_box">
             <ul class="notice1">
               <li>
-                <a href="#"><img src="img/con2_img_02.png" alt="" />가상현실체험관 재개관 안내</a>
-                <span>2022-12-02</span>
+                <a href="#">2023년 학예직 직무교육 개설 운영</a>
+                <span>2023.04.25</span>
               </li>
               <li>
-                <a href="#">국립광주박물관 공무직(홍보)근로자 채용 공고</a>
-                <span>2022-10-25</span>
+                <a href="#">국립광주박물관 공무직(문화행사)근로자 채용</a>
+                <span>2023.04.18</span>
               </li>
               <li>
-                <a href="#">국립광주박물관 공무직(홍보) 근로자 채용시험 합격자 공고</a>
-                <span>2022-11-15</span>
+                <a href="#">국립광주박물관 공무직 근로자(문화행사) 채용</a>
+                <span>2023.04.03</span>
               </li>
               <li>
-                <a href="#">국립광주박물관 공무직(홍보) 근로자 서류전형 합격자 및 면접 일정 공고</a>
-                <span>2022-11-07</span>
+                <a href="#">[문화행사] 봄 내음 가득한 박물관에서 숲･문화･</a>
+                <span>2023.03.30</span>
               </li>
               <li>
-                <a href="#">국립광주박물관 휴관일 안내(2022.11.7.)</a>
-                <span>2022-11-07</span>
+                <a href="#">국립광주박물관 공무직(홍보)근로자 채용 서류</a>
+                <span>2023.02.13</span>
+              </li>
+              <li>
+                <a href="#">가상현실체험관 휴관 안내 (4/24~28)</a>
+                <span>2023.04.21</span>
               </li>
             </ul>
             <!-- notice1 end -->
             <ul class="notice2">
               <li>
-                <a href="#"
-                  ><img src="img/con2_img_02.png" alt="" />[누구나/비대면] 나에게 온ON 박물관 - '어느 수집가의 초대' 수집일기 참여자
-                  모집(1차)</a
-                ><span>2022-12-08</span>
+                <a href="#">[누구나/대면] 2023 큐레이터와의 대화 일정안내</a>
+                <span>2023.01.27</span>
               </li>
               <li>
-                <a href="#"
-                  >[누구나/비대면] '큐레이터와의 대화' : 어느 수집가의 초대 2부 A Collector's InvitationTHE BEQUEST OF LEE KUN-HEESpecial
-                  Exhibition</a
-                ><span>2022-11-30</span>
+                <a href="#">[성인]'제33기 광주박물관대학 - 인도로 가는 길' 교육생</a>
+                <span>2023.01.20</span>
               </li>
-              <li><a href="#">[성인] '아시아의 종교건축' 박물관 특강 안내</a><span>2022-11-03</span></li>
               <li>
-                <a href="#"
-                  >[누구나/비대면] '큐레이터와의 대화' : 어느 수집가의 초대 A Collector's InvitationTHE BEQUEST OF LEE KUN-HEESpecial
-                  Exhibition</a
-                ><span>2022-10-26</span>
+                <a href="#">[성인]2022년 교사직무연수'박물관 활용 교육과정 재구성</a>
+                <span>2022.06.07</span>
               </li>
-              <li><a href="#">특별전 〈어느 수집가의 초대〉 전시연계 학술강연회(1차) 안내</a><span>2022-10-17</span></li>
+              <li>
+                <a href="#">[가족/비대면] '나에게 온ON 박물관 - 변신! 화순 대곡리</a>
+                <span>2022.06.03</span>
+              </li>
+              <li>
+                <a href="#">[초,중,고 단체/대면] '박물관은 내 친구'교육 모집공고</a>
+                <span>2022.05.18</span>
+              </li>
+              <li>
+                <a href="#">[가족/대면]광주비엔날레 -물처럼 부드럽고 여리게 연계</a>
+                <span>2023.03.30</span>
+              </li>
             </ul>
             <!-- notice2 end -->
           </div>
@@ -492,7 +537,7 @@
         <div class="copy">
           61066 광주광역시 북구 하서로 110(매곡동 430번지)
           <img src="img/bar_07.png" alt="" />
-          대표전화 062-570-7000<br />
+          대표전화 062)570-7000<br />
           Copyright(c) 2018 Gwangju National Museum. All rights reserved.
         </div>
         <!-- copy end -->
