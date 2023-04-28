@@ -99,3 +99,18 @@ $('.play_img').click(function () {
   $('.play_img').hide();
   box1Slide.autoplay.start();
 });
+
+
+//notice
+$('.tab_title > li').click(function () {
+  $(this).addClass('active');
+  $(this).siblings().removeClass('active');
+});
+$('.tab_title > li:nth-child(1)').click(function () {
+  $('.notice1').show();
+  $('.notice2').hide();
+});
+$('.tab_title > li:nth-child(2)').click(function () {
+  $('.notice2').show();
+  $('.notice1').hide();
+});
