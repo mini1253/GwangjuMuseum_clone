@@ -4,8 +4,6 @@ html,
 body {
   font-family: 'NanumSquare';
 }
-
-/* header */
 .header {
   width: 100%;
 }
@@ -71,6 +69,7 @@ body {
 .h_icons {
   display: flex;
   margin-right: 15px;
+  align-items: center;
 }
 .h_icons > li {
   margin-left: 5px;
@@ -79,7 +78,7 @@ body {
   display: block;
   background: #154283;
   color: #fff;
-  padding: 7px 10px;
+  padding: 7px 13px;
   font-size: 15px;
 }
 
@@ -186,12 +185,9 @@ body {
   background: #154282;
   color: #fff;
 }
-
-
-/* main */
 .main {
   width: 100%;
-  height: 560px;
+  height: 660px;
 }
 .main .swiper-container {
   width: 100%;
@@ -250,7 +246,8 @@ body {
 }
 .con1_box:last-child {
   border-right: none;
-} 
+}
+/* con1_box border-color : #ddd */
 .con1_box a {
   display: flex;
   justify-content: center;
@@ -537,9 +534,9 @@ body {
   margin-right: 20px;
   font-weight: bold;
   cursor: pointer;
-}
-.tab_title > li:first-child {
-  color: #154283;
+} 
+.active{
+  color: #154282;
 }
 .tab_box {
   margin-top: 15px;
@@ -616,13 +613,12 @@ body {
   font-size: 14px;
 }
 
-
-/* footer */
 .f_wrap {
   max-width: 1240px;
   width: 95%;
   margin: 0 auto;
 }
+
 .footer {
   background: #3b3b3d;
   color: #eee;
@@ -719,8 +715,12 @@ body {
   padding: 0 5px;
 }
 
-
-/* 미디어쿼리 */
+/* pc 사이즈 
+전체사이즈 ~ 1024px */
+/* 태블릿 사이즈 
+1023px ~ 768px*/
+/* 모바일 사이즈
+767px ~ 0 */
 @media all and (max-width: 767px) {
   /* 모바일 사이즈 */
   .h_icons,
